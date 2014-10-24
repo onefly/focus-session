@@ -48,7 +48,7 @@ public class FocusSessionFilter implements Filter {
 			FilterChain chain) throws IOException, ServletException {
 		HttpServletRequest req = (HttpServletRequest) request;
 		String sessionIdValue = getSessionIdValue(req);
-		if(!ObjectUtils.notNull(sessionIdValue)){//第一次访问
+		if(!ObjectUtils.notNull(sessionIdValue)){
 			request.setAttribute("sessionContext", sessionContext);
 			chain.doFilter(new FocusHttpRequestWrapper(req), response);
 			return;
