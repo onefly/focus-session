@@ -1,0 +1,3 @@
+org.focus.session.conversion.kyro.KryoConversion
+#org.focus.session.conversion.jdk.DefaultConversion
+#org.focus.session.conversion.fst.FstConversion
